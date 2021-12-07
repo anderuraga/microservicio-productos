@@ -4,3 +4,4 @@ Este proyecto tiene un video tutorial que puedes seguir por youtube
 Cada video de youtube corresponde con un TAG
 
 1. [Capítulo 1: Creación proyecto Spring](https://youtu.be/pzlanOdUMvc)
+2. [Capítulo 2: Creación Clase Producto](https://youtu.be/NiiBpUAMlyk)
