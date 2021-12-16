@@ -52,4 +52,21 @@ public class ProductoController {
 
 	}
 
+	@Operation(summary = "Eliminar un Producto por su identificador")
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Producto eliminado"),
+			@ApiResponse(responseCode = "404", description = "No existe producto por su identificador solicitado") })
+	@RequestMapping(path = "{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Producto> eliminar(@PathVariable("id") int id) {
+
+		Producto p = productoRepository.findById(id).orElse(null);
+
+		if (p == null) {
+			return ResponseEntity.notFound().build(); // 404
+		} else {
+			productoRepository.deleteById(id);
+			return ResponseEntity.ok(p); // 200
+		}
+
+	}
+
 }
