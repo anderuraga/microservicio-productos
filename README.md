@@ -11,4 +11,5 @@ Cada video de youtube corresponde con un TAG
 6. [Capítulo 6: Documentar API RestFull con OpenApi](https://youtu.be/CGRNiCLAlnQ)
 7. [Capítulo 7: API Rest: Detalle Producto](https://youtu.be/XueRsjTgjx8)
 8. [Capítulo 8: API Rest: Eliminar Producto](https://youtu.be/AtBd546QxO8)
+9. [Capítulo 9: API Rest: Crear Producto](https://youtu.be/zHyIM_tDizg)
 

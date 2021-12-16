@@ -1,10 +1,12 @@
 package com.microservice;
 
+import java.net.URI;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -66,6 +68,17 @@ public class ProductoController {
 			productoRepository.deleteById(id);
 			return ResponseEntity.ok(p); // 200
 		}
+
+	}
+
+	@Operation(summary = "Crear un nuevo Producto y asignar un identificador")
+	@ApiResponses(value = { @ApiResponse(responseCode = "201", description = "Producto Creado") })
+	@RequestMapping(method = RequestMethod.POST)
+	public ResponseEntity<Object> crear(@RequestBody Producto p) {
+
+		productoRepository.save(p);
+		URI uri = URI.create(String.format("/producto/%s", p.getId()));
+		return ResponseEntity.created(uri).build(); // 201
 
 	}
 
