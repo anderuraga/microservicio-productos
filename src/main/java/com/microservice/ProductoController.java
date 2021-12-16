@@ -87,4 +87,23 @@ public class ProductoController {
 
 	}
 
+	@Operation(summary = "Modificar un Producto por su identificador")
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Producto Modificado"),
+			@ApiResponse(responseCode = "404", description = "Producto no encontrado"),
+			@ApiResponse(responseCode = "400", description = "campos del producto no son correctos, el nombre min=3 max=250") })
+	@RequestMapping(method = RequestMethod.PUT)
+	public ResponseEntity<Object> modificar(@Valid @RequestBody Producto p) {
+
+		final int id = p.getId();
+		Producto pEncontrado = productoRepository.findById(id).orElse(null);
+
+		if (pEncontrado == null) {
+			return ResponseEntity.notFound().build(); // 404
+		} else {
+			productoRepository.save(p);
+			return ResponseEntity.ok(p); // 200
+		}
+
+	}
+
 }
