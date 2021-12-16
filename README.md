@@ -12,4 +12,5 @@ Cada video de youtube corresponde con un TAG
 7. [Capítulo 7: API Rest: Detalle Producto](https://youtu.be/XueRsjTgjx8)
 8. [Capítulo 8: API Rest: Eliminar Producto](https://youtu.be/AtBd546QxO8)
 9. [Capítulo 9: API Rest: Crear Producto](https://youtu.be/zHyIM_tDizg)
+10. [Capítulo 10: API Rest: Validar Producto](https://youtu.be/FgZUNUMLIyU)
 
