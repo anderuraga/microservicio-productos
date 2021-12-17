@@ -17,7 +17,9 @@ Cada video de youtube corresponde con un TAG
 
 
 ##API Documentación
+
 [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
+![metodos de la Api](https://raw.githubusercontent.com/anderuraga/microservicio-productos/master/screenshot_api.png)
 
 
 ##Docker
