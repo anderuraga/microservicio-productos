@@ -1,7 +1,7 @@
-# microservicio-productos
+# Microservicio-Productos
 microservicio productos java 11 Spring Boot
-Este proyecto tiene un video tutorial que puedes seguir por youtube
-Cada video de youtube corresponde con un TAG
+Este proyecto dispone de un video-tutorial que puedes seguir por youtube
+Cada video de youtube corresponde con un TAG dentro de GitHub
 
 - [Capítulo 1: Creación proyecto Spring](https://youtu.be/pzlanOdUMvc)
 - [Capítulo 2: Creación Clase Producto](https://youtu.be/NiiBpUAMlyk)
@@ -14,15 +14,16 @@ Cada video de youtube corresponde con un TAG
 - [Capítulo 9: API Rest: Crear Producto](https://youtu.be/zHyIM_tDizg)
 - [Capítulo 10: API Rest: Validar Producto](https://youtu.be/FgZUNUMLIyU)
 - [Capítulo 11: API Rest: Modificar Producto](https://youtu.be/JSuo9vLS-IY)
+- [Capítulo 12: Dockerizar App](https://youtu.be/ErGhnn7fyMc)
 
 
-##API Documentación
+## API Documentación
 
 [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
 ![metodos de la Api](https://raw.githubusercontent.com/anderuraga/microservicio-productos/master/screenshot_api.png)
 
 
-##Docker
+## Docker
 
 Crear fichero Dockerfile
 
