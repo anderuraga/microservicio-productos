@@ -36,12 +36,12 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 Crear Imagen
 ```
-docker build -t servicio .
+docker build -t microservicio .
 ```
 
 Arrancar el contenedor
 ```
-docker run --rm -p 5000:8080 servicio
+docker run --rm -p 5000:8080 microservicio
 ```
 
 
