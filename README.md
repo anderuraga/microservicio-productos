@@ -15,3 +15,32 @@ Cada video de youtube corresponde con un TAG
 - [Capítulo 10: API Rest: Validar Producto](https://youtu.be/FgZUNUMLIyU)
 - [Capítulo 11: API Rest: Modificar Producto](https://youtu.be/JSuo9vLS-IY)
 
+
+##API Documentación
+[http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
+
+
+##Docker
+
+Crear fichero Dockerfile
+
+```
+FROM openjdk:11
+COPY "./target/producto-0.0.1-SNAPSHOT.jar" app.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+Crear Imagen
+```
+docker build -t servicio .
+```
+
+Arrancar el contenedor
+```
+docker run --rm -p 5000:8080 servicio
+```
+
+
+
+
